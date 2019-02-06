@@ -61,6 +61,8 @@ public class LoginStepDefination extends base {
 		logout.getArrow().click();
 		Thread.sleep(3000);
 		logout.getLogout().click();
+		
+		driver.quit();
 	}
 
 	@And("^close browser$")
