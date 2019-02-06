@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
- <listeners>
-     
-        
-         <listener class-name="Academy.listeners"/>
-         <listener class-name="resources.ExtentReporterNG"/>
-         
+	<listeners>
+		<listener class-name="Academy.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+	</listeners>
 
- </listeners>
+	<test name="Validating User login">
+		<classes>
+			<class name="cucumberOptions.TestRunner" />
+		</classes>
+	</test>
 
-  <test name="Validating User login">
-    <classes>
-      <class name="cucumberOptions.TestRunner"/>
-          </classes>
-      </test>
-      
-   
-   <!-- Test -->
+	<!-- Test -->
 </suite> <!-- Suite -->

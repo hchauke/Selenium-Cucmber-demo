@@ -39,10 +39,13 @@ public class base {
 			capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
-			ChromeOptions options = new ChromeOptions();
 			Map<String, Object> chromePrefs = new HashMap<String, Object>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("plugins.always_open_pdf_externally", true);
+			chromePrefs.put("profile.default_content_setting_values.notifications", 2);
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");
 			options.setExperimentalOption("prefs", chromePrefs);
 
 			System.setProperty("webdriver.chrome.driver",
