@@ -9,6 +9,7 @@ public class HomePage {
 	public WebDriver driver;
 
 	By profile_page = By.xpath("//span[@class='_1vp5']");
+	By about = By.xpath("//a[contains(text(),'About')]");
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -20,5 +21,9 @@ public class HomePage {
 
 	public String getPageTitle() {
 		return driver.getTitle();
+	}
+	
+	public WebElement getAbout() {
+		return driver.findElement(about);
 	}
 }
