@@ -9,10 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Validating User login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">27,323</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Validating User login</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">207</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validating User login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">cucumberOptions.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1549454361549</td><td rowspan="1">27071</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validating User login &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">cucumberOptions.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1549460119083</td><td rowspan="1">180</td></tr><tr class="failedeven"><td><a href="#m1">tearDownClass</a></td><td rowspan="1">1549460119280</td><td rowspan="1">0</td></tr><tr><th colspan="4">Validating User login &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">cucumberOptions.TestRunner</td><td><a href="#m2">feature</a></td><td rowspan="1">1549460119277</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Validating User login</h2><h3 id="m0">cucumberOptions.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login into Application</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Validating User login</h2><h3 id="m0">cucumberOptions.TestRunner#setUpClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in stepDefinations.stepDefination.initialize_the_browser_with_chrome() in file:/Users/hlulani/Downloads/PROJECTS/SELENIUM/E2EProjectCucumber/target/classes/ and stepDefinations.LogoutStepDefinations.initialize_the_browser_with_chrome() in file:/Users/hlulani/Downloads/PROJECTS/SELENIUM/E2EProjectCucumber/target/test-classes/
+	at cucumber.runtime.RuntimeGlue.addStepDefinition(RuntimeGlue.java:33)
+	at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:151)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:68)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
+	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:92)
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:70)
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)
+	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:42)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:16)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cucumberOptions.TestRunner#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cucumberOptions.TestRunner#feature</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+	at cucumber.api.testng.AbstractTestNGCucumberTests.features(AbstractTestNGCucumberTests.java:29)
+	... 22 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

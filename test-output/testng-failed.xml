@@ -5,12 +5,12 @@
     <listener class-name="Academy.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Validating User login(failed)">
+  <test thread-count="5" name="Validating User login(failed)">
     <classes>
       <class name="cucumberOptions.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- cucumberOptions.TestRunner -->

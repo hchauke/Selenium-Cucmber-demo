@@ -1,9 +1,11 @@
-stepDefinations/stepDefination.class
+pageObjects/LandingPage.class
 Academy/listeners.class
+pageObjects/Logout.class
 resources/base.class
 pageObjects/LoginPage.class
 resources/ExtentReporterNG.class
 cucumberOptions/TestRunner.class
 Academy/App.class
 pageObjects/HomePage.class
+stepDefinations/LoginStepDefination.class
 Academy/AppTest.class

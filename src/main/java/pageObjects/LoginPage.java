@@ -29,5 +29,4 @@ public class LoginPage {
 	public WebElement getLogin() {
 		return driver.findElement(login_button);
 	}
-
 }
