@@ -8,7 +8,7 @@ public class HomePage {
 	
 	public WebDriver driver;
 	
-	By profile = By.xpath("//span[@class='_1vp5']");
+	By profile_page = By.xpath("//span[@class='_1vp5']");
 	By profile_name = By.xpath("//a[@class='_2nlw _2nlv']");
 	
 	public HomePage(WebDriver driver) {
@@ -16,7 +16,7 @@ public class HomePage {
 	}
 
 	public WebElement getProfile() {
-		return driver.findElement(profile);
+		return driver.findElement(profile_page);
 	}
 
 	public WebElement getProfileName() {
