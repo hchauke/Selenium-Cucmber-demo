@@ -34,6 +34,11 @@ public class stepDefination extends base {
 		assertTrue(home.getPageTitle().contains("Hlulani"));
 		
 		home.getAbout().click();
+		Thread.sleep(3000);
+		home.getPhotos().click();
+		Thread.sleep(3000);
+		home.getHome().click();
+		Thread.sleep(3000);
 	}
 
 	@When("^User enters (.+) and (.+) and logs in$")
